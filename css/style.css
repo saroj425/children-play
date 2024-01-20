@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: bisque; */
+    padding: 50px;
+}
+.title-box{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.side-image img{
+    width: 500px;
+}
+.title-box i{
+    font-size: 35px;
+    color: #d3d3d3;
+}
+.title{
+    text-align: center;
+    font-size: 45px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.left{
+    min-width: 60%;
+}
+.right img{
+    /* width: 100%;
+    height: 100vh; */
+    width: 480px;
+}
+.app button{
+    border: none;
+    padding: 20px 40px;
+    gap: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.app button:hover{
+    background: #b04c02;
+    font-weight: bold;
+    color: #fff;
+    border: 3px solid #0066ff6c;
+    border-radius: 5px;
+}
+.footer-div{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    bottom: 10px;
+}
+.footer-div p{
+    color: #ffc400;
+    font-size: 20px;
+}
+.footer-div p a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffc400;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        /* background: #b04c02; */
+        padding: 15px;
+        overflow-x: hidden;
+        overflow-y:scroll ;        
+    }
+    .title-box {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        background: aquamarine;
+        width: 105%;
+        margin-left: -20px;
+        margin-top: -20px;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    .app{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    .app button{
+        border: none;
+        padding: 10px 30px;
+        gap: 20px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .side-image img{
+        width: 95%;
+    }
+}
