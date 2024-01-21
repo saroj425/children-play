@@ -2,7 +2,7 @@ function spaek(letter){
     let audio = document.getElementById("audio");
     let speaker = document.getElementById("speaker");
     audio.src='../images/apple.mp3'
-    if(letter == 'a')audio.src='children-play/audio/apple.mp3';
+    if(letter == 'a')audio.src='https://raw.githubusercontent.com/saroj425/children-play/master/audio/apple.mp3';
     else if(letter=='b') audio.src='children-play/audio/ball.mp3';
     else if(letter=='c') audio.src='children-play/audio/cat.mp3';
     else if(letter=='d') audio.src='children-play/audio/dog.mp3';
